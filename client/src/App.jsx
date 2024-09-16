@@ -10,7 +10,9 @@ import { useState } from 'react';
 import React from "react";
 import "./index.css";
 import Signup from "./pages/Signup";
-import UserHome from "./pages/UserHome";
+import UserDashboard from "./admin/dashboard/UserDashboard";
+import IdeaForum from './admin/dashboard/Idea-forum';
+import QueriesPage from './admin/dashboard/QueriesPage';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -45,7 +47,11 @@ function App() {
         <Route path="/admin/merchandise" element={<MerchandiseSales />} />
         <Route path="/admin/editevents" element={<EditEvent />} />
         <Route path='/signup' element={<Signup />} />
-        <Route path='/userhome' element={<UserHome />} />
+        <Route path='/userhome' element={<UserDashboard />} />
+        <Route path='/user/idea-forum' element={<IdeaForum />} />
+        <Route path="/user/queries" element={<QueriesPage />} />
+
+
       </Routes>
     </Router>
   );
