@@ -4,13 +4,11 @@ import Dashboard from './admin/dashboard/Dashboard';
 import MerchandiseSales from './admin/merchandise/MerchandiseSales';
 import CreateEvent from './admin/events/CreateEvent';
 import Events from './admin/events/Events';
+import EditEvent from './admin/events/EditEvent';
 import Participants from './admin/events/Participants';
 import { useState } from 'react';
-import EditEvent from './admin/events/EditEvent';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import "./index.css";
-import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import UserHome from "./pages/UserHome";
 
