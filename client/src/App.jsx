@@ -7,6 +7,12 @@ import Events from './admin/events/Events';
 import Participants from './admin/events/Participants';
 import { useState } from 'react';
 import EditEvent from './admin/events/EditEvent';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import "./index.css";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import UserHome from "./pages/UserHome";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -40,6 +46,8 @@ function App() {
         <Route path="/admin/create-event" element={<CreateEvent />} />
         <Route path="/admin/merchandise" element={<MerchandiseSales />} />
         <Route path="/admin/editevents" element={<EditEvent />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/userhome' element={<UserHome />} />
       </Routes>
     </Router>
   );
